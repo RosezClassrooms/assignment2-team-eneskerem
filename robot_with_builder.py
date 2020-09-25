@@ -145,7 +145,7 @@ class AutonomousCarBuilder(RobotBuilder):
     self.product.detection_systems.append(InfraredDetectionSystem())
 
 #-------------------------------------------------------------------------
-#'''
+'''
 # Remove # in line above to comment out this section when using Director
 
 # Using the builders to create different robots
@@ -161,9 +161,10 @@ print(builder.get_product())
 
 #-------------------------------------------------------
 #  Keep line below whether testing builders or director
-'''
+
 #-------------------------------------------------------
 
+'''
 # Diretor manages all of the Builders
 # Do we need separate make methods?
 class Director:
@@ -186,5 +187,4 @@ builder = AutonomousCarBuilder()
 print(director.make_autonomous_car(builder))
 
 # comment out line below when testing director
-'''
 
